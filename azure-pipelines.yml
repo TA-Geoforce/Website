@@ -23,7 +23,7 @@ steps:
 
 - script: |
     npm install
-    npx gatsby build
+    npm gatsby build
   displayName: 'gatsby build'
  
 
