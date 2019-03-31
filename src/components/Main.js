@@ -45,7 +45,7 @@ class Main extends React.Component {
           <h2 className="major">About</h2>
           <span className="image main"><img src={pic03} alt="" /></span>
           <h3>Company Location</h3>
-          <p> Solonos 11th Str. Nea Ionia, <br></br>
+          <p> Saggariou 8th Str. Nea Ionia, <br></br>
               Attica, Greece 14231<br></br>
           <i class="fa fa-phone"></i> +30 2102718811<br></br>
           <a href="mailto:t.a.geoforce@gmail.com?Subject=Contact" target="_top"><i class="fa fa-envelope-o"></i> t.a.geoforce@gmail.com</a></p>
