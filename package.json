@@ -1,7 +1,7 @@
 {
   "name": "website",
   "description": "T.A. Geoforce - Website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Christos Charmatzis",
   "dependencies": {
     "gatsby": "^2.2.9",
