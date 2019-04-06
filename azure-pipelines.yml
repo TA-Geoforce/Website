@@ -26,7 +26,20 @@ steps:
     npm install
     npx gatsby build
   displayName: 'gatsby build'
- 
+
+- script: |
+      python -m pip install --upgrade pip==9.0.3 setuptools wheel
+      pip install awscli --user
+  displayName: 'Install tools'
+
+- task: AWSShellScript@1
+  inputs:
+    awsCredentials: 'aws_tokens'
+    regionName: 'us-east-2'
+    scriptType: 'inline'
+    inlineScript: |
+    eval $(/home/vsts/.local/bin/aws ecr get-login --no-include-email)
+
 
 - task: CopyFiles@2
   inputs:
