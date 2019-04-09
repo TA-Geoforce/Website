@@ -9,8 +9,8 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>T.A. Geoforce</h1>
-                <p>Release the power of data<br />
-                using AI power.</p>
+                <p>Release the power of data <br/>
+                 using AI power.</p>
             </div>
         </div>
         <nav>
