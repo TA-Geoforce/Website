@@ -2,9 +2,9 @@ module.exports = {
     siteTitle: "T.A. Geoforce", // <title>
     shortSiteTitle: "T.A. Geoforce - Data Analytics", // <title> ending for posts and pages
     siteDescription: "Wellcome to T.A. Geoforce website.",
-    siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
+    siteUrl: "https://www.tageoforce.com",
     // pathPrefix: "",
-    siteImage: "preview.jpg",
+    siteImage: "Logo_small.jpg",
     siteLanguage: "en",
   
     /* author */
@@ -12,15 +12,15 @@ module.exports = {
     authorTwitterAccount: "charmatzis",
   
     /* info */
-    headerTitle: "Christos Charmatzis",
-    headerSubTitle: "",
+    headerTitle: "T.A. Geoforce",
+    headerSubTitle: "Data Analytics",
   
     /* manifest.json */
     manifestName: "T.A. Geoforce - Data Analytics",
     manifestShortName: "T.A. Geoforce", // max 12 characters
     manifestStartUrl: "/index.html",
     manifestBackgroundColor: "white",
-    manifestThemeColor: "#666",
+    manifestThemeColor: "#666666",
     manifestDisplay: "standalone",
   
     // gravatar
@@ -33,7 +33,7 @@ module.exports = {
     // social
     authorSocialLinks: [
       { name: "github", url: "https://github.com/TA-Geoforce" },
-      { name: "twitter", url: "" },
+      { name: "twitter", url: "https://twitter.com/TAGeoforce" },
       { name: "facebook", url: "" }
     ]
   };
