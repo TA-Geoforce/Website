@@ -50,9 +50,9 @@ class Main extends React.Component {
           <i class="fa fa-phone"></i> +30 2102718811<br></br>
           <a href="mailto:t.a.geoforce@gmail.com?Subject=Contact" target="_top"><i class="fa fa-envelope-o"></i> t.a.geoforce@gmail.com</a></p>
            <ul className="icons">
-            <li><a href="https://twitter.com/TAGeoforce" target="_blank"  rel="noopener noreferrer" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
+            <li><a href="https://twitter.com/TAGeoforce" target="_blank" rel="noopener noreferrer" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
             <li><a href="https://www.linkedin.com/company/t-a-geoforce" target="_blank"  rel="noopener noreferrer" className="icon fa-linkedin"><span className="label">Facebook</span></a></li>
-            <li><a href="https://github.com/TA-Geoforce" target="_blank"  rel="noopener noreferrer" className="icon fa-github"><span className="label">GitHub</span></a></li>
+            <li><a href="https://github.com/TA-Geoforce" target="_blank" rel="noopener noreferrer" className="icon fa-github"><span className="label">GitHub</span></a></li>
           </ul>
           {close}
         </article>
