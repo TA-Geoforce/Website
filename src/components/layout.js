@@ -41,8 +41,8 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'T.A. Geoforce is a pioneer company for Data Analytics' },
+              { name: 'keywords', content: 'T.A. Geoforce, AI, Machine Learning, GIS, Geospatial, Data Analytics, data, big data, predictive analytic services' },
             ]}
           >
             <html lang="en" />
