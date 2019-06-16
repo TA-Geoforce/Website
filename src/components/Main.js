@@ -114,6 +114,10 @@ class Main extends React.Component {
               ...more info
             </a>
           </p>
+          <br />
+          <form method="get" action="/brochure/TA_Geoforce.pdf">
+            <button type="submit">Download Brochure</button>
+          </form>
           {close}
         </article>
 
@@ -132,8 +136,10 @@ class Main extends React.Component {
           <p>
             {' '}
             Saggariou 8th Str. Nea Ionia, <br />
-            Attica, Greece 14231<br />
-            <i className="fa fa-phone" /> +30 2102718811<br />
+            Attica, Greece 14231
+            <br />
+            <i className="fa fa-phone" /> +30 2102718811
+            <br />
             <a
               href="mailto:t.a.geoforce@gmail.com?Subject=Contact"
               target="_top"
