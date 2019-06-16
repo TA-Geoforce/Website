@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'ta-geoforce-website',
-        short_name: 'starter',
+        short_name: 'TA Geoforce',
         start_url: '/',
         background_color: '#000000',
         theme_color: '#000000',
