@@ -108,7 +108,7 @@ class Main extends React.Component {
             electrical power for the next years.
             <br />
             <a
-              href="mailto:t.a.geoforce@gmail.com?Subject=Solar%20Power%20Estimator"
+              href="mailto:info@tageoforce.com?Subject=Solar%20Power%20Estimator"
               target="_top"
             >
               ...more info
@@ -141,10 +141,10 @@ class Main extends React.Component {
             <i className="fa fa-phone" /> +30 2102718811
             <br />
             <a
-              href="mailto:t.a.geoforce@gmail.com?Subject=Contact"
+              href="mailto:info@tageoforce.com?Subject=Contact"
               target="_top"
             >
-              <i class="fa fa-envelope-o" /> t.a.geoforce@gmail.com
+              <i class="fa fa-envelope-o" /> info@tageoforce.com
             </a>
           </p>
           <ul className="icons">
