@@ -5,6 +5,9 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+import bgmp4 from '../images/bg.mp4'
+import bgwebm from '../images/bg.webm'
+
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -21,16 +24,16 @@ class IndexPage extends React.Component {
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.timeoutId = setTimeout(() => {
-        this.setState({loading: ''});
+      this.setState({ loading: '' });
     }, 100);
     document.addEventListener('mousedown', this.handleClickOutside);
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     if (this.timeoutId) {
-        clearTimeout(this.timeoutId);
+      clearTimeout(this.timeoutId);
     }
     document.removeEventListener('mousedown', this.handleClickOutside);
   }
@@ -105,7 +108,12 @@ class IndexPage extends React.Component {
             />
             <Footer timeout={this.state.timeout} />
           </div>
-          <div id="bg"></div>
+          <div id="bg">
+            <video autoPlay loop muted playsInline>
+              <source src={bgwebm} type="video/webm" />
+              <source src={bgmp4} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </Layout>
     )
