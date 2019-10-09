@@ -1,37 +1,67 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+const Main = (props) => (
+//class Main extends React.Component {
 
-class Main extends React.Component {
-  render() {
+<StaticQuery
+    query={graphql`
+    query {
+      pic01: file(relativePath: { eq: "pic01.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+  
+      pic02: file(relativePath: { eq: "pic02.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+  
+      pic03: file(relativePath: { eq: "pic03.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `}
+
+    render={data => {
+
     let close = (
       <div
         className="close"
         onClick={() => {
-          this.props.onCloseArticle()
+          props.onCloseArticle()
         }}
       />
     )
 
     return (
       <div
-        ref={this.props.setWrapperRef}
+        ref={props.setWrapperRef}
         id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+        style={props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
           id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${props.article === 'intro' ? 'active' : ''} ${
+            props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <Img fluid={data.pic01.childImageSharp.fluid} />
           </span>
 
           <p>
@@ -61,14 +91,14 @@ class Main extends React.Component {
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${props.article === 'work' ? 'active' : ''} ${
+            props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <Img fluid={data.pic01.childImageSharp.fluid} />
           </span>
           <h3>Natural Disasters Loss</h3>
           <p>
@@ -123,14 +153,14 @@ class Main extends React.Component {
 
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${props.article === 'about' ? 'active' : ''} ${
+            props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <Img fluid={data.pic03.childImageSharp.fluid} />
           </span>
           <h3>Company Location</h3>
           <p>
@@ -144,7 +174,7 @@ class Main extends React.Component {
               href="mailto:info@tageoforce.com?Subject=Contact"
               target="_top"
             >
-              <i class="fa fa-envelope-o" /> info@tageoforce.com
+              <i className="fa fa-envelope-o" /> info@tageoforce.com
             </a>
           </p>
           <ul className="icons">
@@ -192,9 +222,10 @@ class Main extends React.Component {
           {close}
         </article>
       </div>
-    )
-  }
-}
+    );
+  }}
+/>
+)
 
 Main.propTypes = {
   route: PropTypes.object,
