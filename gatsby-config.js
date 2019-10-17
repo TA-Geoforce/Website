@@ -28,6 +28,12 @@ module.exports = {
         icon: 'src/images/global1.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-zopfli',
+      options: {
+        extensions: ['css', 'html', 'js', 'svg']
+      }
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
