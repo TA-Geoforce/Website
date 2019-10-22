@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 
 import bgmp4 from '../images/bg.mp4'
 import bgwebm from '../images/bg.webm'
+import bgpreview from '../images/bg.jpg'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -109,7 +110,7 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg">
-            <video autoPlay loop muted playsInline>
+            <video autoPlay muted poster={bgpreview} loop muted playsInline>
               <source src={bgwebm} type="video/webm" />
               <source src={bgmp4} type="video/mp4" />
             </video>
