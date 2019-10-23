@@ -110,9 +110,9 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg">
-            <video autoPlay muted poster={bgpreview} loop muted playsInline>
-              <source src={bgwebm} type="video/webm" />
+            <video autoPlay muted poster={bgpreview} loop muted playsInline>              
               <source src={bgmp4} type="video/mp4" />
+              <source src={bgwebm} type="video/webm" />
             </video>
           </div>
         </div>
