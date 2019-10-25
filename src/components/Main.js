@@ -168,7 +168,7 @@ const Main = (props) => (
             Saggariou 8th Str. Nea Ionia, <br />
             Attica, Greece 14231
             <br />
-            <i className="fa fa-phone" /> +30 2102718811
+            <i className="fa fa-phone" /> +30 2114136007
             <br />
             <a
               href="mailto:info@tageoforce.com?Subject=Contact"
