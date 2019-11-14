@@ -34,6 +34,6 @@ module.exports = {
     authorSocialLinks: [
       { name: "github", url: "https://github.com/TA-Geoforce" },
       { name: "twitter", url: "https://twitter.com/TAGeoforce" },
-      { name: "facebook", url: "" }
+      { name: "facebook", url: "https://www.facebook.com/tageoforce" }
     ]
   };
