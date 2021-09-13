@@ -165,7 +165,7 @@ const Main = (props) => (
           <h3>Company Location</h3>
           <p>
             {' '}
-            Saggariou 8th Str. Nea Ionia, <br />
+            Eletheriou Venizelou 75th Str. Nea Ionia, <br />
             Attica, Greece 14231
             <br />
             <i className="fa fa-phone" /> +30 211 414 4000
